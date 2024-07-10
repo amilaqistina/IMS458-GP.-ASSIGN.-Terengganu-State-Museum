@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <title>Activities - Terengganu State Museum</title>
+</head>
+<body>
+    <header>
+        <h1>Activities</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <div class="dropdown">
+                <a href="museum.html" class="dropbtn">Museum</a>
+                <div class="dropdown-content">
+                    <a href="what-is-the-museum.html">What is the Museum?</a>
+                    <a href="history-of-construction.html">History of the Museum Construction</a>
+                    <a href="agency-background.html">Background of the Agency</a>
+                    <a href="agency-functions-and-roles.html">Agency Functions and Roles</a>
+                    <a href="historical-sites.html">Historical Sites</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Museum Branch</button>
+                        <div class="dropdown-content">
+                            <a href="dungun-district-museum.html">Dungun District Museum</a>
+                            <a href="kemaman-district-museum.html">Kemaman District Museum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="gallery.html">Gallery</a>
+            <div class="dropdown">
+                <a href="news.html" class="dropbtn">News</a>
+                <div class="dropdown-content">
+                    <a href="current-news.html">Current News</a>
+                    <a href="latest-event.html">Latest Event</a>
+                </div>
+            </div>
+            <a href="services.html">Services</a>
+            <div class="dropdown">
+                <a href="archive.html" class="dropbtn">Archive</a>
+                <div class="dropdown-content">
+                    <a href="activities.html">Activities</a>
+                    <a href="photo-gallery.html">Photo Gallery</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Tour</h2>
+        <div class="activity">
+            <p><strong>1. SELF JEWELRY COLLECTION BOX PREPARATION WORKSHOP</strong></p>
+            <div class="activity-toggle" onclick="toggleActivity('activity1')">Show Details</div>
+            <div class="activity-content" id="activity1">
+                <p><em>Super User  Activities  September 20, 2022</em></p>
+                <p>A total of 20 staff members of the Terengganu State Museum participated in the Workshop for the Preparation of Personal Jewelry Collection Boxes located in the Telepok Room, Terengganu State Museum Complex. Encik Awang Ku Mohd Fadli bin Awang Besar, Assistant Curator of the Collection Management Division and Encik Mohamad Ruzi bin Sulaiman, the Senior Museum Assistant of the Collection Management Division from the Department of Museum Malaysia are the instructors who have been appointed to make the workshop a success.</p>
+                <p>This workshop is theoretically based and also practical regarding the making of ' custom-made ' boxes for a diverse collection, especially related to personal jewelry. The purpose of making this box is to protect the collection from being damaged or dusty. Among the collections produced to make ' custom-made ' boxes are bags, capes, dohohs, pendants, belts and anklets.</p>
+                <p>Congratulations to the line-up of instructors and participants of the Self Jewelry Collection Box Preparation Workshop.</p>
+                <div class="activities">
+                    <div class="carousel">
+                        <div><img src="act1,1.jpeg" alt="Activities Image 1"></div>
+                        <div><img src="act1,2.jpeg" alt="Activities Image 2"></div>
+                        <div><img src="act1,3.jpeg" alt="Activities Image 3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p><strong>2. COLLABORATION BETWEEN TERENGGANU STATE MUSEUM BOARD AND EAST COAST PETRONAS</strong></p>
+            <div class="activity-toggle" onclick="toggleActivity('activity2')">Show Details</div>
+            <div class="activity-content" id="activity2">
+                <p><em>Super User  Activities  September 20, 2022</em></p>
+                <p>On Monday, 19 September 2022, a discussion regarding the Bidong Island cooperation project between the Terengganu State Museum Board (LMNT) and PETRONAS was held. The discussion was led by the Head of the Research and Documentation Sector, Mr Zakaria bin Abdul Hadi, LMNT and Mr Mohd Amin Demanis, Head of the Program Implementation Department from PETRONAS East Coast.</p>
+                <div class="activities">
+                    <div class="carousel">
+                        <div><img src="act2,1.jpeg" alt="Activities Image 1"></div>
+                        <div><img src="act2,2.jpeg" alt="Activities Image 2"></div>
+                        <div><img src="act2,3.jpeg" alt="Activities Image 3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p><strong>3. LET'S DONATE THE COLLECTION</strong></p>
+            <div class="activity-toggle" onclick="toggleActivity('activity3')">Show Details</div>
+            <div class="activity-content" id="activity3">
+                <p><em>Super User  Activities  September 20, 2022</em></p>
+                <p>Any further information can contact:</p>
+                <p>Mrs. Azlaizie, 09-6321231</p>
+                <p>Mr. Khairuddin, 013-9131512</p>
+                <p>Mrs. Noor Asyikin, 017-9372404</p>
+                <p>Miss Rahaimi, 019-9256211</p>
+                <div class="activities">
+                        <img src="act3,1.jpeg" alt="Activities Image 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Terengganu State Museum. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+            });
+        });
+
+        function toggleActivity(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                event.target.innerHTML = "Hide Details";
+            } else {
+                content.style.display = "none";
+                event.target.innerHTML = "Show Details";
+            }
+        }
+    </script>
+</body>
+</html>

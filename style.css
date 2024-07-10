@@ -1,0 +1,513 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    padding: 2em;
+    background-color: white;
+    margin: 2em auto;
+    max-width: 800px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    position: flex;
+    bottom: 0;
+    left: 0;
+}
+
+.news-page footer {
+    color: #fff;
+}
+
+.fixed-footer-page footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    align-items: left;
+}
+
+h1,
+h2 {
+    margin-left: 10px;
+}
+
+.imgbg {
+    background-image: url(home.jpg);
+    background-size: cover;
+    padding: 207px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+.imgbg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.imgbg h1,
+.imgbg h2,
+.imgbg p {
+    position: relative;
+    z-index: 2;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-text h2 {
+    margin: first-line;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 10;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 10;
+}
+
+.container h2 {
+    color: #4b5320;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.container ul li {
+    margin: 1em 0;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #4b5320;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: #4b5320; 
+    margin-top: 20px;
+}
+
+.container .activity {
+    margin-bottom: 20px;
+}
+
+.container .activity p {
+    margin-bottom: 10px;
+}
+
+.container .activity-toggle {
+    cursor: pointer;
+    background-color: rgb(48, 116, 110);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.container .activity-toggle:hover {
+    background-color: rgb(41, 43, 73);
+}
+
+.container .activity-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.container .activities {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container .activities img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+    color: #4b5320;
+}
+
+form input,
+form textarea {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #6b8e23;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #556b2f;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.profile-image {
+    width: 40%;
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.activities img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+}
+
+.container.news h2 {
+    color: #4b5320;
+    margin-top: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.news-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.container h2 {
+    color: #4b5320;
+    margin-top: 20px;
+}
+
+.container p, .container ul {
+    color: #666;
+    line-height: 1.5;
+    margin: 1.5 em 0; 
+}
+
+.container ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+} 
+
+blockquote {
+    background-color: #e6f3f7; 
+    border-left: 5px solid #4b5320; 
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #333;
+    font-style: italic;
+    border-radius: 5px;
+}
+.container h2 {
+    color: #4b5320;
+    margin-top: 20px;
+}
+
+.album {
+    margin-bottom: 30px;
+}
+
+.album h3 {
+    color: #4b5320;
+    margin-bottom: 10px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.latest-events {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item {
+    margin-bottom: 20px;
+}
+
+.event-item img {
+    display: block;
+    margin: 20px auto;
+    width: 35%;
+}
+
+.event-item h3 {
+    color: #333;
+}
+
+.event-item p {
+    color: #555;
+}
+
+.container {
+    padding: 20px;
+}
+
+.contact-us h2 {
+    text-align: center;
+}
+
+.contact-us {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-us form input[type="text"],
+.contact-us form input[type="email"],
+.contact-us form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-us form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-us form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container.agency-functions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.container.agency-functions h3 {
+    margin-top: 20px;
+}
+
+.container.agency-functions ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.toggle {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.toggle h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.toggle-content {
+    display: none;
+    padding: 10px;
+}
+
+.toggle-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
